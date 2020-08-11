@@ -1,0 +1,189 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*RESET END*/
+
+
+/***************MY CSS***************/
+body {
+  font-family: Montserrat;
+  margin: 0;
+  margin-top: 0;
+}
+hr {
+  background-color: #BBBBBB
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar {
+  background-color:#EB5549;
+  display: flex;
+}
+
+.navbar a {
+  display: block;
+  padding: 5px 10px;
+  margin-right: 5px;
+  color: black;
+}
+
+.navbar a:last-child {
+  margin-right: 0px;
+}
+
+.navbar-logo {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+.hero-container {
+  background: url(images/paws.png);
+  font-weight: 600;
+  height: 450px;
+  background-size: cover;
+  text-align: center;
+}
+
+.hero-heading {
+  font-family: Indie Flower;
+  font-size: 50px;
+  color: #323232;
+  position: relative;
+  padding: 50px;
+}
+
+.cta-btn1 {
+  background-color: #EB5549;
+  color: white;
+  font-family: Montserrat;
+  font-weight: bold;
+  position: relative;
+  padding: 10px 20px;
+  margin: 50px;
+  border-radius: 20px 20px;
+  border: none;
+}
+
+.section-2-container {
+  text-align: center;
+  padding: 50px 100px;
+  position: relative;
+  background-color: #FFB98E;
+  color: white;
+}
+.section-2-container p {
+  width: 75%;
+  line-height: 1.5;
+  margin: auto;
+}
+
+.mid-section-heading {
+  font-size: 25px;
+  padding: 30px;
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+.cta-btn2 {
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 50px;
+  border-radius: 20px 20px;
+background-color: white;
+color: #BBBBBB;
+border: none;
+}
+
+.section-3-container {
+  padding: 75px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #EEEEEE;
+  }
+  .price-list-heading{
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+.prices-list-box {
+  padding: 35px 25px;
+  border-radius: 20px 20px;
+  text-align: center;
+  height: auto;
+  border-style: solid;
+  border-color: #9FB19F;
+  background-color: #DDE1DD;
+}
+.prices-list{
+  list-style-type: none;
+  padding: 20px;
+  line-height: 1.5;
+}
+.copyright{
+  text-align: center;
+  justify-content: space-between;
+  display: block;
+  padding: 5px 10px;
+}
+
+.footer-logo-wrapper, .social-bar {
+  width:150.5px;
+}

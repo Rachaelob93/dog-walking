@@ -89,12 +89,8 @@ a {
 .navbar a {
   display: block;
   padding: 5px 10px;
-  margin-right: 5px;
+  margin-left: 5px;
   color: white;
-}
-
-.navbar a:last-child {
-  margin-right: 0px;
 }
 
 .navbar-logo {
@@ -262,6 +258,10 @@ a {
   .flex-container {
     flex-direction: column;
     justify-content: center;
+  }
+
+  .flex-nav-mbl{
+    justify-content: space-between;
   }
 
   .section-2-container {

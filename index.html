@@ -12,14 +12,28 @@
 
 <body>
 
+  <script>
+    function showMenu() {
+      var element = document.getElementById("navbar-menu");
+      element.classList.toggle("show");
+    }
+  </script>
+
   <!-- NAVBAR -->
   <div class="navbar flex-container flex-nav-mbl">
     <img class="navbar-logo" src="css/images/logo.png" alt="">
-    <div class="navbar">
+    <div class="navbar navbar-menu" id="navbar-menu">
       <a href="">Home</a>
       <a href="">About</a>
       <a href="">Prices</a>
       <button class="cta-btn-nav" type="button" name="button">Contact</button>
+        <p class="hamburger hamburger-x" onclick="showMenu()">X</p>
+    </div>
+
+    <div class="hamburger" onclick="showMenu()">
+      <div class="hamburger-line one"></div>
+      <div class="hamburger-line two"></div>
+      <div class="hamburger-line three"></div>
     </div>
 
     <!-- HERO SECTION -->

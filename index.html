@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Theo's Waggy Floofs</title>
+  <title>The Waggy Floofs</title>
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://kit.fontawesome.com/7e16081d87.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
@@ -22,18 +22,29 @@
   <script>
     function showMenu() {
       var element = document.getElementById("navbar-menu");
+      var contact = document.getElementById("contact-div");
+      element.classList.toggle("show");
+      if (contact.classList.contains("show")) {
+        contact.classList.toggle("show");
+      }
+    }
+  </script>
+
+  <script>
+    function showContact() {
+      var element = document.getElementById("contact-div");
       element.classList.toggle("show");
     }
   </script>
 
   <!-- NAVBAR -->
-  <div class="navbar flex-container flex-nav-mbl">
+  <div class="navbar flex-container flex-nav-mbl" id="home">
     <img class="navbar-logo" src="css/images/logo.png" alt="">
     <div class="navbar navbar-menu" id="navbar-menu">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Prices</a>
-      <a href="#" class="cta-btn-nav">Contact</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#prices">Prices</a>
+      <a href="#" class="cta-btn-nav" onclick="showContact()">Contact</a>
       <div class="hamburger hamburger-x" onclick="showMenu()">X</div>
     </div>
 
@@ -47,38 +58,60 @@
 
   </div>
   <div class="hero-container">
+    <div class="contact-div" id="contact-div">
+      <a href="#" class="contact-x" onclick="showContact()">X</a>
+
+      <div>
+        
+        <div class="contact-details">
+          Phone:
+          <br>
+          07123 123456
+        </div>
+
+        <div class="contact-details">
+          Email:
+          <br>
+          <a href="mailto:waggyfloofs@email.com" class="contact-email">waggyfloofs@email.com</a>
+          <br>
+        </div>
+
+
+      </div>
+    </div>
+
+
     <div class="hero-content">
-      <h1 class="hero-heading">Theo's Waggy Floofs</h1>
+      <h1 class="hero-heading">The Waggy Floofs</h1>
       <p>The only dog walker who loves your dog as much as you do. </p>
-      <button class="cta-btn1" type="button" name="button">Call Now</button>
+      <a href="tel:07123123456"class="cta-btn1">Call Now</a>
     </div>
 
   </div>
 
   <!-- SECOND SECTION -->
 
-  <div class="section-2-container">
+  <div class="section-2-container" id="about">
+
+
     <div class="flex-container2">
       <div class="flex-child">
         <img class="icon" src="css/images/paw.png" alt="">
-        <h2 class="mid-section-heading">The Finest Walks in Aspull</h2>
-        <p>Lorem ipsum dolor sit amet, ridens meliore id has. Ea tale assueverit sed. Ad eam tota decore, ad vix esse eligendi scripserit, probo quodsi ei qui. Eu viris semper accommodare sed, hinc deseruisse vix cu. Fabellas molestiae an has, per id
-          congue aperiam constituam, utinam habemus ponderum sed at. Dicat oporteat vix in, prodesset sadipscing dissentiunt eos eu.</p>
-<button class="cta-btn2" type="button" name="button">Book Now</button>
+        <h2 class="mid-section-heading">The Finest Walks in England</h2>
+        <p>Lorem ipsum dolor sit amet, ridens meliore id has. Ea tale assueverit sed. Ad eam tota decore, ad vix esse eligendi scripserit, probo quodsi ei qui. Eu viris semper accommodare sed, hinc deseruisse vix cu. Fabellas molestiae an has, per id congue aperiam constituam, utinam habemus ponderum sed at. Dicat oporteat vix in, prodesset sadipscing dissentiunt eos eu.</p>
+        <a href="tel:07123123456"class="cta-btn2">Book Now</a>
       </div>
       <div class="flex-child">
         <img class="icon" src="css/images/dog.png" alt="">
-        <h2 class="mid-section-heading">The Finest Walks in Aspull</h2>
-        <p>Lorem ipsum dolor sit amet, ridens meliore id has. Ea tale assueverit sed. Ad eam tota decore, ad vix esse eligendi scripserit, probo quodsi ei qui. Eu viris semper accommodare sed, hinc deseruisse vix cu. Fabellas molestiae an has, per id
-          congue aperiam constituam, utinam habemus ponderum sed at. Dicat oporteat vix in, prodesset sadipscing dissentiunt eos eu.</p>
-<button class="cta-btn2" type="button" name="button">Book Now</button>
+        <h2 class="mid-section-heading">The Finest Walks in England</h2>
+        <p>Lorem ipsum dolor sit amet, ridens meliore id has. Ea tale assueverit sed. Ad eam tota decore, ad vix esse eligendi scripserit, probo quodsi ei qui. Eu viris semper accommodare sed, hinc deseruisse vix cu. Fabellas molestiae an has, per id congue aperiam constituam, utinam habemus ponderum sed at. Dicat oporteat vix in, prodesset sadipscing dissentiunt eos eu.</p>
+        <a href="tel:07123123456"class="cta-btn2">Book Now</a>
       </div>
       <div class="flex-child">
         <img class="icon" src="css/images/bone.png" alt="">
-        <h2 class="mid-section-heading">The Finest Walks in Aspull</h2>
-        <p>Lorem ipsum dolor sit amet, ridens meliore id has. Ea tale assueverit sed. Ad eam tota decore, ad vix esse eligendi scripserit, probo quodsi ei qui. Eu viris semper accommodare sed, hinc deseruisse vix cu. Fabellas molestiae an has, per id
-          congue aperiam constituam, utinam habemus ponderum sed at. Dicat oporteat vix in, prodesset sadipscing dissentiunt eos eu.</p>
-<button class="cta-btn2" type="button" name="button">Book Now</button>
+        <h2 class="mid-section-heading">The Finest Walks in England</h2>
+        <p>Lorem ipsum dolor sit amet, ridens meliore id has. Ea tale assueverit sed. Ad eam tota decore, ad vix esse eligendi scripserit, probo quodsi ei qui. Eu viris semper accommodare sed, hinc deseruisse vix cu. Fabellas molestiae an has, per id congue aperiam constituam, utinam habemus ponderum sed at. Dicat oporteat vix in, prodesset sadipscing dissentiunt eos eu.</p>
+        <a href="tel:07123123456"class="cta-btn2">Book Now</a>
       </div>
     </div>
   </div>
@@ -86,7 +119,7 @@
 
   <!-- PRICING SECTION -->
 
-  <div class="section-3-container">
+  <div class="section-3-container" id="prices">
 <div class="flex-container">
 <div class="flex-child price">
   <div class="price-title">Cheapest Option</div>
@@ -104,7 +137,7 @@
   <div class="price-feature-parent">
     <div class="price-feature">Up to 3 dogs</div>
     <div class="price-feature">Treats included</div>
-    <div class="price-feature">Extra floofs</div>
+    <div class="price-feature">Walk with other dogs</div>
   </div>
 </div>
 
